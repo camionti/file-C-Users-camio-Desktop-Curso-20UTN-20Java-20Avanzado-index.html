@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java avanzado</title>
+</head>
+<body>
+    <div class="contenedor">
+<div class="cuadrado aqua" onclick="cambiarFondo('aqua')"></div>
+<div class="cuadrado verde" onclick="cambiarFondo('rgb(72, 255, 72)')"></div>
+<div class="cuadrado rosa" onclick="cambiarFondo('pink')"></div>
+    </div>
+    <style>
+.contenedor {
+    display: flex;
+}
+
+.cuadrado{
+    height: 100px;
+    width: 100px;
+}
+
+.aqua{
+    background-color: aqua;
+}
+
+.verde {
+    background-color: rgb(72, 255, 72);
+}
+
+.rosa {
+    background-color: pink;
+}
+    </style>
+    <script>
+        function cambiarFondo(color) {
+            document.querySelector('body').style.background = color}
+    </script>
+</body>
+</html>
